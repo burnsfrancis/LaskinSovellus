@@ -2,6 +2,7 @@ package com.example.laskin;
 
 public class Muuntaja
 {
+    //class to convert units of area
     static class Area{
         public double sqMilliToMeter(double milli)
         {
@@ -54,6 +55,7 @@ public class Muuntaja
         }
     }
 
+    //class to convert units of length
     static class Length{
         public double MilliToMeter(double milli)
         {
@@ -137,6 +139,7 @@ public class Muuntaja
 
     }
 
+    //class to convert units of temperature
     static class Temperature{
         public double FerToKelvin(double fer)
         {
@@ -159,6 +162,7 @@ public class Muuntaja
         }
     }
 
+    //class to convert units of mass/weight
     static class Weight
     {
         public double MilliToKilo(double milli)

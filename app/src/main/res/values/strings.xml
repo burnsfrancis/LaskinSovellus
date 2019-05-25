@@ -1,18 +1,23 @@
 <resources>
-    <string name="app_name">LASKIN</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Laskin</string>
-    <string name="nav_header_subtitle">burnsfrancis@hotmail.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Asetukset</string>
-    <string name="stdCal">Laskin</string>
-    <string name="sciCal">Funktiolaskin</string>
-    <string name="unitCal">Yksikönmuuntaja</string>
-    <string name="FullCal">Laskimet</string>
-    <string name="title_activity_standard_cal">Laskin</string>
-    <string name="title_activity_scientific_cal">Funktiolaskin</string>
-    <string name="title_activity_unit_coverter">Yksikönmuuntaja</string>
+
+    <string name="app_name">Laskin</string>
+    <string name="sposti">burnsfrancis@hotmail.com</string>
+    <string name="nav_laskimet">Laskimet</string>
+    <string name="nav_muuntaja">Yksikönmuuntaja</string>
+    <string name="nav_asetukset">Asetukset</string>
+    <string name="nav_laskin">Laskin</string>
+    <string name="nav_flaskin">Funktiolaskin</string>
+    <string name="nav_alue">Alue</string>
+    <string name="nav_pituus">Pituus</string>
+    <string name="nav_massa">Massa</string>
+    <string name="nav_lampo">Lämpö</string>
+    <string name="nav_historia">Historia</string>
+    <string name="poistaHistoria">Tyhjennä</string>
+    <string name="kieli">Kieli</string>
+    <string name="teema">Teema</string>
+
     <string name="clear">C</string>
     <string name="backspace">⌫</string>
     <string name="divide">÷</string>
@@ -29,33 +34,28 @@
     <string name="xpown">xⁿ</string>
     <string name="epown">eⁿ</string>
     <string name="pi">π</string>
-    <string name="title_activity_unit_area">Alue</string>
-    <string name="title_activity_unit_length">Pituus</string>
-    <string name="title_activity_unit_weight">Massa</string>
-    <string name="title_activity_unit_temperature">Lämpötila</string>
     <string name="openBracket">(</string>
     <string name="closeBracket">)</string>
-    <string name="history">Historia</string>
 
     <string-array name="area">
-        <item>Sq. Millimeter</item>
-        <item>Sq. Centimeter</item>
-        <item>Sq Meter</item>
-        <item>Sq. Kilometer</item>
-        <item>Acre</item>
-        <item>Hectare</item>
+        <item>Neliömetri</item>
+        <item>Neliösenttimetri</item>
+        <item>Neliömetri</item>
+        <item>Metri</item>
+        <item>Eekkeri</item>
+        <item>Hehtaari</item>
     </string-array>
 
     <string-array name="length">
-        <item>Nanometer</item>
-        <item>Millimeter</item>
-        <item>Centimeter</item>
-        <item>Meter</item>
-        <item>Kilometer</item>
-        <item>Inches</item>
-        <item>Foot</item>
-        <item>Yards</item>
-        <item>Mile</item>
+        <item>Nanometri</item>
+        <item>Millimetri</item>
+        <item>Senttimetri</item>
+        <item>Metri</item>
+        <item>Kilometri</item>
+        <item>Tuuma</item>
+        <item>Jalka</item>
+        <item>Jaardi</item>
+        <item>Maili</item>
     </string-array>
 
     <string-array name="temperature">
@@ -65,18 +65,16 @@
     </string-array>
 
     <string-array name="weight">
-        <item>Milligrams</item>
-        <item>Centigrams</item>
-        <item>Decigrams</item>
-        <item>Grams</item>
-        <item>Kilograms</item>
-        <item>Metric tonnes</item>
-        <item>Pounds</item>
-        <item>Ounces</item>
+        <item>Milligramma</item>
+        <item>Senttigramma</item>
+        <item>Desigramma</item>
+        <item>Gramma</item>
+        <item>Kilogramma</item>
+        <item>Tonni</item>
+        <item>Pauna</item>
+        <item>Unssi</item>
     </string-array>
 
-    <string name="title_activity_history">History</string>
-    <string name="deleteHistory">Tyhjennä</string>
     <string name="mode1">Aste</string>
     <string name="mode2">Radiaani</string>
     <string name="toggle">Vaihda</string>
@@ -91,8 +89,5 @@
     <string name="Mod">%</string>
     <string name="inverse">1/x</string>
     <string name="factorial" >x!</string>
-    <string name="title_activity_main">Laskin</string>
-    <string name="language">Kieli</string>
-    <string name="theme">Teema</string>
 
 </resources>

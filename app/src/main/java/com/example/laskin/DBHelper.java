@@ -64,7 +64,7 @@ public class DBHelper extends SQLiteOpenHelper {
     public void deleteRecords(String calcName)
     {
         db=getWritableDatabase();
-        String value[]={calcName};
+        String[] value = {calcName};
         int i=db.delete(table_Name, column1+"=?", value);
         db.close();
     }

@@ -9,8 +9,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
 
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FunktioLaskin"
-    tools:showIn="@layout/activity_funktiolaskin">
+    tools:context=".FragmentFunktio$FunktioLaskin"
+    tools:showIn="@layout/fragment_flaskin">
 
     <EditText
         android:layout_width="match_parent"
@@ -374,7 +374,7 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/history"
+        android:text="@string/nav_historia"
         android:id="@+id/history"
         android:layout_below="@+id/openBracket"
         android:layout_alignParentLeft="true"

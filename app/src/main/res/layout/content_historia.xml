@@ -10,12 +10,12 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Historia"
-    tools:showIn="@layout/app_bar_historia">
+    tools:showIn="@layout/activity_historia">
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/deleteHistory"
+        android:text="@string/poistaHistoria"
         android:id="@+id/deleteHistory"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"

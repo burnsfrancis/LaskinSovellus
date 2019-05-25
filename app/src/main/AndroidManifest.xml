@@ -15,42 +15,39 @@
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".Laskin"
-            android:label="Laskin"
+            android:name=".FragmentLaskin$Laskin"
+            android:label="@string/nav_laskin"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".FunktioLaskin"
-            android:label="FunktioLaskin"
+            android:name=".FragmentFunktio$FunktioLaskin"
+            android:label="@string/nav_flaskin"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Yksikönmuuntaja"
-            android:label="Muuntaja"
+            android:name=".FragmentAlue$YksikköAlue"
+            android:label="@string/nav_alue"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".YksikköAlue"
-            android:label="Alue"
+            android:name=".FragmentPituus$YksikköPituus"
+            android:label="@string/nav_pituus"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".YksikköPituus"
-            android:label="Pituus"
+            android:name=".FragmentMassa$YksikköMassa"
+            android:label="@string/nav_massa"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".YksikköMassa"
-            android:label="Massa"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".YksikköLämpötila"
-            android:label="Lämpötila"
+            android:name=".FragmentLämpö$YksikköLämpötila"
+            android:label="@string/nav_lampo"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Historia"
-            android:label="Historia"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:label="@string/nav_historia"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

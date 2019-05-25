@@ -5,7 +5,7 @@ public class CalculateFactorial
     public static final int MAX=1000;
 
     private int res_size;
-    private int res[]=new int[MAX];
+    private int[] res = new int[MAX];
 
     CalculateFactorial()
     {
