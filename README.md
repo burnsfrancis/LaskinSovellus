@@ -22,15 +22,15 @@ Päiväkirja:
 * Siivosin koodia
 * Muutin navigoinnin vielä yksinkertaisemmaksi käyttämällä fragmentteja. (Jostain syystä käyttää vanhaa UI)
 
-25/05/2019 (5h)
+25/05/2019 (8h)
 * Korjasin ongelmia sivujen lataamisessa ja sovelluksen kaatumisessa.
-* Luovutin navigoinnin suhteen.
+* Korjasin ongelman missä sovellus käytti vanhaa navigointi tapaa.
 
 Ongelmia:
-* Alue ja A
+* Asetukset sivua ei ole olemassa koska sillä ei ole ATM tarvetta.
+* Navigointi ei toimi.
 
 Miten voisi jatkaa?
-* Korjata navigointi
 * Lisätä mahdollisuus vaihtaa sovelluksen kieltä ja teemaa.
 
 # APK
