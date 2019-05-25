@@ -1,6 +1,7 @@
 package com.example.laskin;
 
 import android.os.Bundle;
+
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+import java.util.zip.Inflater;
+
 public class FragmentAlue extends Fragment {
 
     @Nullable
@@ -20,6 +23,7 @@ public class FragmentAlue extends Fragment {
     }
 
     public class YksikköAlue extends AppCompatActivity {
+
 
         private EditText e1,e2;
         private Spinner s1,s2;

@@ -4,5 +4,5 @@
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="102"
-        android:title="Asetukset" />
+        android:title="@string/nav_asetukset" />
     </menu>

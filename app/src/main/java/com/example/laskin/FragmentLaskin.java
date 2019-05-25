@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 
 import com.fathzer.soft.javaluator.DoubleEvaluator;
@@ -33,6 +34,14 @@ public class FragmentLaskin extends Fragment {
         protected void onCreate (Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.content_laskin);
+
+            final Button button = (Button) findViewById(R.id.history);
+            button.setOnClickListener(new View.OnClickListener(){
+                public void onClick(View v) {
+                    setContentView(R.layout.activity_historia);
+                }
+            });
+
             Toolbar toolbar = findViewById(R.id.toolbar);
             setSupportActionBar(toolbar);
 
