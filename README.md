@@ -4,6 +4,10 @@ Sovelluksen tavoitteet
 * Yksinkertainen laskin
 * Funktiolaskin
 * Yksikönmuuntaja
+
+Välineet:
+* AndroidStudio
+* Google + Foorumit (esim. StackOverFlow) + YouTube
     
 Päiväkirja:
   
