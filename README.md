@@ -30,14 +30,16 @@ Päiväkirja:
 * Korjasin ongelmia sivujen lataamisessa ja sovelluksen kaatumisessa.
 * Korjasin ongelman missä sovellus käytti vanhaa navigointi tapaa.
 
-27/05/2019 (5h)
-* Korjasin ongelman missä sovellus kaatui painaessa näppäintä.
+27/05/2019 (8h)
+* Yritin korjata ongelman missä sovellus kaatui painaessa näppäintä.
 
 Ongelmia:
-* Asetukset sivua ei ole olemassa koska sillä ei ole ATM tarvetta.
+* Asetukset sivua ei ole olemassa koska sillä ei ole tällä hetkellä tarvetta.
 * Sovellus kaatuu painaessa numeroa laskimessa.
 
 Miten voisi jatkaa?
 * Lisätä mahdollisuus vaihtaa sovelluksen kieltä ja teemaa.
 
 # APK
+
+[Laskin](https://kahvitauko.eu/dl/laskin.apk)
