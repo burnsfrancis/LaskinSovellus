@@ -1,7 +1,9 @@
 package com.example.laskin;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
@@ -12,13 +14,11 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.Spinner;
 
-import java.util.zip.Inflater;
-
 public class FragmentAlue extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         return inflater.inflate(R.layout.fragment_alue, container, false);
     }
 
@@ -29,6 +29,10 @@ public class FragmentAlue extends Fragment {
         private Spinner s1,s2;
         private int count1=0;
         private Muuntaja.Area ca;
+        private int item1;
+        private int item2;
+        private double value;
+
         @Override
         protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
@@ -44,6 +48,7 @@ public class FragmentAlue extends Fragment {
             ca=new Muuntaja.Area();
         }
 
+        @SuppressLint("SetTextI18n")
         public void onClick(View v)
         {
             switch(v.getId())
@@ -88,7 +93,7 @@ public class FragmentAlue extends Fragment {
                     e1.setText(e1.getText()+"9");
                     break;
 
-                case R.id.dot:
+                case R.id.piste:
                     if (count1==0)
                     {
                         e1.setText(e1.getText()+".");
@@ -96,7 +101,7 @@ public class FragmentAlue extends Fragment {
                     }
                     break;
 
-                case R.id.clear:
+                case R.id.tyjennä:
                     e1.setText("");
                     e2.setText("");
                     count1=0;
@@ -113,7 +118,7 @@ public class FragmentAlue extends Fragment {
                     }
                     break;
 
-                case R.id.equal:
+                case R.id.on:
                     int item1=s1.getSelectedItemPosition();
                     int item2=s2.getSelectedItemPosition();
                     double value1=Double.parseDouble(e1.getText().toString());
@@ -123,8 +128,11 @@ public class FragmentAlue extends Fragment {
             }
         }
 
-        public double evaluate(int item1,int item2,double value)
+        private double evaluate(int item1, int item2, double value)
         {
+            this.item1 = item1;
+            this.item2 = item2;
+            this.value = value;
             double temp=0.0;
             if(item1==item2)
                 return value;

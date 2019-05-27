@@ -42,14 +42,14 @@ public class FragmentFunktio extends Fragment {
             e1 = findViewById(R.id.editText);
             e2 = findViewById(R.id.editText2);
             mode = findViewById(R.id.mode);
-            toggle = findViewById(R.id.toggle);
-            square = findViewById(R.id.square);
+            toggle = findViewById(R.id.vaihda);
+            square = findViewById(R.id.potenssi);
             xpowy = findViewById(R.id.xpowy);
             log = findViewById(R.id.log);
             sin = findViewById(R.id.sin);
             cos = findViewById(R.id.cos);
             tan = findViewById(R.id.tan);
-            sqrt = findViewById(R.id.sqrt);
+            sqrt = findViewById(R.id.neliöjuuri);
             fact = findViewById(R.id.factorial);
 
             dbHelper = new DBHelper(this);
@@ -65,7 +65,7 @@ public class FragmentFunktio extends Fragment {
             angleMode = ((int) mode.getTag());
             switch (v.getId()) {
 
-                case R.id.toggle:
+                case R.id.vaihda:
                     if (toggleMode == 1) {
                         toggle.setTag(2);
                         square.setText(R.string.cube);
@@ -74,11 +74,11 @@ public class FragmentFunktio extends Fragment {
                         sin.setText(R.string.sininv);
                         cos.setText(R.string.cosinv);
                         tan.setText(R.string.taninv);
-                        sqrt.setText(R.string.cuberoot);
+                        sqrt.setText(R.string.kuutiojuuri);
                         fact.setText(R.string.Mod);
                     } else if (toggleMode == 2) {
                         toggle.setTag(3);
-                        square.setText(R.string.square);
+                        square.setText(R.string.potenssi);
                         xpowy.setText(R.string.epown);
                         log.setText(R.string.log);
                         sin.setText(R.string.hyperbolicSine);
@@ -91,7 +91,7 @@ public class FragmentFunktio extends Fragment {
                         sin.setText(R.string.sin);
                         cos.setText(R.string.cos);
                         tan.setText(R.string.tan);
-                        sqrt.setText(R.string.sqrt);
+                        sqrt.setText(R.string.neliöjuuri);
                         xpowy.setText(R.string.xpown);
                     }
                     break;
@@ -151,21 +151,21 @@ public class FragmentFunktio extends Fragment {
                     e2.setText(e2.getText() + "pi");
                     break;
 
-                case R.id.dot:
+                case R.id.piste:
                     if (count == 0 && e2.length() != 0) {
                         e2.setText(e2.getText() + ".");
                         count++;
                     }
                     break;
 
-                case R.id.clear:
+                case R.id.tyjennä:
                     e1.setText("");
                     e2.setText("");
                     count = 0;
                     expression = "";
                     break;
 
-                case R.id.backSpace:
+                case R.id.askelpalautin:
                     text = e2.getText().toString();
                     if (text.length() > 0) {
                         if (text.endsWith(".")) {
@@ -205,23 +205,23 @@ public class FragmentFunktio extends Fragment {
                     }
                     break;
 
-                case R.id.plus:
+                case R.id.plussa:
                     operationClicked("+");
                     break;
 
-                case R.id.minus:
+                case R.id.miinus:
                     operationClicked("-");
                     break;
 
-                case R.id.divide:
+                case R.id.jakolasku:
                     operationClicked("/");
                     break;
 
-                case R.id.multiply:
+                case R.id.kertolasku:
                     operationClicked("*");
                     break;
 
-                case R.id.sqrt:
+                case R.id.neliöjuuri:
                     if (e2.length() != 0) {
                         text = e2.getText().toString();
                         toggleMode = (int) toggle.getTag();
@@ -234,7 +234,7 @@ public class FragmentFunktio extends Fragment {
                     }
                     break;
 
-                case R.id.square:
+                case R.id.potenssi:
                     if (e2.length() != 0) {
                         text = e2.getText().toString();
                         if (toggleMode == 2)
@@ -276,7 +276,7 @@ public class FragmentFunktio extends Fragment {
                             String res = "";
                             try {
                                 CalculateFactorial cf = new CalculateFactorial();
-                                int[] arr = cf.factorial((int) Double.parseDouble(String.valueOf(new ExtendedDoubleEvaluator().evaluate(text))));
+                                int []arr=cf.factorial((int)Double.parseDouble(String.valueOf(new ExtendedDoubleEvaluator().evaluate(text))));
                                 int res_size = cf.getRes();
                                 if (res_size > 20) {
                                     for (int i = res_size - 1; i >= res_size - 20; i--) {
@@ -293,9 +293,9 @@ public class FragmentFunktio extends Fragment {
                                 e2.setText(res);
                             } catch (Exception e) {
                                 if (e.toString().contains("ArrayIndexOutOfBoundsException")) {
-                                    e2.setText("Result too big!");
+                                    e2.setText("Liian iso luku");
                                 } else
-                                    e2.setText("Invalid!!");
+                                    e2.setText("Ei kelpaa");
                                 e.printStackTrace();
                             }
                         }
@@ -379,7 +379,7 @@ public class FragmentFunktio extends Fragment {
                     }
                     break;
 
-                case R.id.equal:
+                case R.id.on:
                     if (e2.length() != 0) {
                         text = e2.getText().toString();
                         expression = e1.getText().toString() + text;
@@ -399,25 +399,25 @@ public class FragmentFunktio extends Fragment {
                         if (!expression.equals("0.0"))
                             dbHelper.insert("SCIENTIFIC", expression + " = " + result);
                     } catch (Exception e) {
-                        e2.setText("Invalid Expression");
+                        e2.setText("Ei kelpaa");
                         e1.setText("");
                         expression = "";
                         e.printStackTrace();
                     }
                     break;
 
-                case R.id.openBracket:
+                case R.id.sulkuAuki:
                     e1.setText(e1.getText() + "(");
                     break;
 
-                case R.id.closeBracket:
+                case R.id.sulkuKiinni:
                     if (e2.length() != 0)
                         e1.setText(e1.getText() + e2.getText().toString() + ")");
                     else
                         e1.setText(e1.getText() + ")");
                     break;
 
-                case R.id.history:
+                case R.id.historia:
                     Intent i = new Intent(this, Historia.class);
                     i.putExtra("calcName", "SCIENTIFIC");
                     startActivity(i);

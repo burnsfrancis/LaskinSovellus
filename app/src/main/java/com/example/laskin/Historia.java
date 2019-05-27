@@ -40,5 +40,4 @@ public class Historia extends AppCompatActivity {
         adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,EmptyList);
         lv.setAdapter(adapter);
     }
-
 }

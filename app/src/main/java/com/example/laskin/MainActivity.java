@@ -12,7 +12,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.content.Intent;
 
+
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     private DrawerLayout drawer;
 
     @Override
@@ -39,8 +41,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        switch (item.getItemId()){
+    public boolean onNavigationItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.nav_laskin:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
                         new FragmentLaskin()).commit();
@@ -72,10 +74,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        }   else {
+        } else {
             super.onBackPressed();
         }
 

@@ -12,18 +12,18 @@
     <string name="nav_alue">Alue</string>
     <string name="nav_pituus">Pituus</string>
     <string name="nav_massa">Massa</string>
-    <string name="nav_lampo">Lämpö</string>
+    <string name="nav_lampö">Lämpö</string>
     <string name="nav_historia">Historia</string>
     <string name="poistaHistoria">Tyhjennä</string>
     <string name="kieli">Kieli</string>
     <string name="teema">Teema</string>
 
-    <string name="clear">C</string>
-    <string name="backspace">⌫</string>
-    <string name="divide">÷</string>
-    <string name="sqrt">√</string>
-    <string name="cuberoot">\u221B</string>
-    <string name="square">x²</string>
+    <string name="tyhjennä">C</string>
+    <string name="askelpalautin">⌫</string>
+    <string name="jakolasku">÷</string>
+    <string name="neliöjuuri">√</string>
+    <string name="kuutiojuuri">\u221B</string>
+    <string name="potenssi">x²</string>
     <string name="cube">x\u00B3</string>
     <string name="tenpow">10\u207F</string>
     <string name="sininv">sin\u207B\u00B9</string>
@@ -34,10 +34,27 @@
     <string name="xpown">xⁿ</string>
     <string name="epown">eⁿ</string>
     <string name="pi">π</string>
-    <string name="openBracket">(</string>
-    <string name="closeBracket">)</string>
+    <string name="sulkuAuki">(</string>
+    <string name="sulkuKiinni">)</string>
+    <string name="kertolasku">x</string>
+    <string name="on">=</string>
+    <string name="miinus">-</string>
+    <string name="piste">.</string>
+    <string name="plussa">+</string>
 
-    <string-array name="area">
+    <string name="num0">0</string>
+    <string name="num1">1</string>
+    <string name="num2">2</string>
+    <string name="num3">3</string>
+    <string name="num4">4</string>
+    <string name="num5">5</string>
+    <string name="num6">6</string>
+    <string name="num7">7</string>
+    <string name="num8">8</string>
+    <string name="num9">9</string>
+
+
+    <string-array name="alue">
         <item>Neliömetri</item>
         <item>Neliösenttimetri</item>
         <item>Neliömetri</item>
@@ -46,7 +63,7 @@
         <item>Hehtaari</item>
     </string-array>
 
-    <string-array name="length">
+    <string-array name="pituus">
         <item>Nanometri</item>
         <item>Millimetri</item>
         <item>Senttimetri</item>
@@ -58,13 +75,13 @@
         <item>Maili</item>
     </string-array>
 
-    <string-array name="temperature">
+    <string-array name="lampö">
         <item>Celsius</item>
         <item>Fahrenheit</item>
         <item>Kelvin</item>
     </string-array>
 
-    <string-array name="weight">
+    <string-array name="massa">
         <item>Milligramma</item>
         <item>Senttigramma</item>
         <item>Desigramma</item>

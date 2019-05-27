@@ -84,7 +84,7 @@ public class FragmentMassa extends Fragment {
                     e1.setText(e1.getText()+"9");
                     break;
 
-                case R.id.dot:
+                case R.id.piste:
                     if (count1==0)
                     {
                         e1.setText(e1.getText()+".");
@@ -92,13 +92,13 @@ public class FragmentMassa extends Fragment {
                     }
                     break;
 
-                case R.id.clear:
+                case R.id.tyjennä:
                     e1.setText("");
                     e2.setText("");
                     count1=0;
                     break;
 
-                case R.id.backSpace:
+                case R.id.askelpalautin:
                     if(e1.length()!=0)
                     {
                         String text=e1.getText().toString();
@@ -109,7 +109,7 @@ public class FragmentMassa extends Fragment {
                     }
                     break;
 
-                case R.id.equal:
+                case R.id.on:
                     int item1=s1.getSelectedItemPosition();
                     int item2=s2.getSelectedItemPosition();
                     double value1=Double.parseDouble(e1.getText().toString());

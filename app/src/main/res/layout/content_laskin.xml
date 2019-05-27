@@ -9,19 +9,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".FragmentLaskin$Laskin"
+    tools:context=".ActivityLaskin"
     tools:showIn="@layout/fragment_laskin">
 
     <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/editText1"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:editable="false"
-        android:textAlignment="textEnd"
-        android:gravity="end" />
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/editText1"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:editable="false"
+    android:textAlignment="textEnd"
+    android:gravity="end" />
 
     <EditText
         android:layout_width="match_parent"
@@ -35,11 +35,11 @@
         android:gravity="end" />
 
     <Button
+        android:id="@+id/tyjennä"
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/clear"
-        android:id="@+id/clear"
+        android:text="@string/tyhjennä"
         android:layout_below="@+id/editText2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -49,19 +49,19 @@
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/backspace"
-        android:id="@+id/backSpace"
-        android:layout_alignBottom="@+id/clear"
-        android:layout_toRightOf="@+id/clear"
-        android:layout_toEndOf="@+id/clear"
+        android:text="@string/askelpalautin"
+        android:id="@+id/askelpalautin"
+        android:layout_alignBottom="@+id/tyjennä"
+        android:layout_toRightOf="@+id/tyjennä"
+        android:layout_toEndOf="@+id/tyjennä"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="7"
+        android:text="@string/num7"
         android:id="@+id/num7"
-        android:layout_below="@+id/clear"
+        android:layout_below="@+id/tyjennä"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onClick" />
@@ -69,7 +69,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="8"
+        android:text="@string/num8"
         android:id="@+id/num8"
         android:layout_alignBottom="@+id/num7"
         android:layout_toRightOf="@+id/num7"
@@ -79,7 +79,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="9"
+        android:text="@string/num9"
         android:id="@+id/num9"
         android:layout_alignBottom="@+id/num8"
         android:layout_toRightOf="@+id/num8"
@@ -89,7 +89,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="4"
+        android:text="@string/num4"
         android:id="@+id/num4"
         android:layout_below="@+id/num7"
         android:layout_alignParentLeft="true"
@@ -99,7 +99,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="5"
+        android:text="@string/num5"
         android:id="@+id/num5"
         android:layout_alignBottom="@+id/num4"
         android:layout_toRightOf="@+id/num4"
@@ -107,29 +107,29 @@
         android:onClick="onClick" />
 
     <Button
+        android:id="@+id/num6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="6"
-        android:id="@+id/num6"
+        android:text="@string/num6"
         android:layout_alignBottom="@+id/num5"
         android:layout_toRightOf="@+id/num5"
         android:layout_toEndOf="@+id/num5"
         android:onClick="onClick" />
 
     <Button
+        android:id="@+id/num1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
-        android:id="@+id/num1"
         android:layout_below="@+id/num4"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:onClick="onClick" />
+        android:layout_alignParentLeft="true"
+        android:onClick="onClick"
+        android:text="@string/num1" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="2"
+        android:text="@string/num2"
         android:id="@+id/num2"
         android:layout_alignBottom="@+id/num1"
         android:layout_alignLeft="@+id/num5"
@@ -139,7 +139,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="3"
+        android:text="@string/num3"
         android:id="@+id/num3"
         android:layout_alignBottom="@+id/num2"
         android:layout_toRightOf="@+id/num2"
@@ -154,35 +154,35 @@
         android:layout_below="@+id/num1"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text="@string/num0"
         android:id="@+id/num0"
         android:layout_alignBottom="@+id/posneg"
         android:layout_toRightOf="@+id/posneg"
         android:layout_toEndOf="@+id/posneg"
-        android:onClick="onClick" />
+        android:onClick="onClick"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="."
-        android:id="@+id/dot"
+        android:text="@string/piste"
+        android:id="@+id/piste"
         android:layout_alignBottom="@+id/num0"
         android:layout_toRightOf="@+id/num0"
         android:layout_toEndOf="@+id/num0"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="+"
-        android:id="@+id/plus"
+        android:text="@string/plussa"
+        android:id="@+id/plussa"
         android:layout_above="@+id/num6"
         android:layout_toRightOf="@+id/num9"
         android:layout_toEndOf="@+id/num9"
@@ -191,69 +191,69 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="-"
-        android:id="@+id/minus"
+        android:text="@string/miinus"
+        android:id="@+id/miinus"
         android:layout_above="@+id/num3"
         android:layout_toRightOf="@+id/num6"
         android:layout_toEndOf="@+id/num6"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/divide"
-        android:id="@+id/divide"
-        android:layout_above="@+id/dot"
-        android:layout_alignLeft="@+id/minus"
-        android:layout_alignStart="@+id/minus"
+        android:text="@string/jakolasku"
+        android:id="@+id/jakolasku"
+        android:layout_above="@+id/piste"
+        android:layout_alignLeft="@+id/miinus"
+        android:layout_alignStart="@+id/miinus"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="x"
-        android:id="@+id/multiply"
-        android:layout_alignBottom="@+id/dot"
-        android:layout_alignLeft="@+id/divide"
-        android:layout_alignStart="@+id/divide"
+        android:text="@string/kertolasku"
+        android:id="@+id/kertolasku"
+        android:layout_alignBottom="@+id/piste"
+        android:layout_alignLeft="@+id/jakolasku"
+        android:layout_alignStart="@+id/jakolasku"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="="
-        android:id="@+id/equal"
+        android:text="@string/on"
+        android:id="@+id/on"
         android:onClick="onClick"
-        android:layout_below="@+id/openBracket"
+        android:layout_below="@+id/sulkuAuki"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/square"
-        android:id="@+id/square"
+        android:text="@string/potenssi"
+        android:id="@+id/potenssi"
         android:onClick="onClick"
-        android:layout_below="@+id/dot"
-        android:layout_toLeftOf="@+id/sqrt"
-        android:layout_toStartOf="@+id/sqrt" />
+        android:layout_below="@+id/piste"
+        android:layout_toLeftOf="@+id/neliöjuuri"
+        android:layout_toStartOf="@+id/neliöjuuri" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/sqrt"
-        android:id="@+id/sqrt"
-        android:layout_alignBottom="@+id/square"
-        android:layout_alignLeft="@+id/multiply"
-        android:layout_alignStart="@+id/multiply"
+        android:text="@string/neliöjuuri"
+        android:id="@+id/neliöjuuri"
+        android:layout_alignBottom="@+id/potenssi"
+        android:layout_alignLeft="@+id/kertolasku"
+        android:layout_alignStart="@+id/kertolasku"
         android:onClick="onClick" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/openBracket"
-        android:id="@+id/openBracket"
+        android:text="@string/sulkuAuki"
+        android:id="@+id/sulkuAuki"
         android:layout_below="@+id/posneg"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -262,19 +262,19 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/closeBracket"
-        android:id="@+id/closeBracket"
-        android:layout_alignBottom="@+id/square"
-        android:layout_toRightOf="@+id/openBracket"
-        android:layout_toEndOf="@+id/openBracket"
+        android:text="@string/sulkuKiinni"
+        android:id="@+id/sulkuKiinni"
+        android:layout_alignBottom="@+id/potenssi"
+        android:layout_toRightOf="@+id/sulkuAuki"
+        android:layout_toEndOf="@+id/sulkuAuki"
         android:onClick="onClick"/>
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nav_historia"
-        android:id="@+id/history"
-        android:layout_below="@+id/equal"
+        android:id="@+id/historia"
+        android:layout_below="@+id/on"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:onClick="onClick"/>

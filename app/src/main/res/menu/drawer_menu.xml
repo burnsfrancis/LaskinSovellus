@@ -22,7 +22,7 @@
             android:title="@string/nav_massa" />
         <item
             android:id="@+id/nav_lampo"
-            android:title="@string/nav_lampo" />
+            android:title="@string/nav_lampö" />
     </group>
 
 </menu>

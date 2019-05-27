@@ -6,9 +6,8 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.util.Log;
-import android.widget.Toast;
-
 import java.util.ArrayList;
+
 
 public class DBHelper extends SQLiteOpenHelper {
 
@@ -48,6 +47,7 @@ public class DBHelper extends SQLiteOpenHelper {
         Cursor cursor;
         ArrayList<String> list=new ArrayList<String>();
         String []selectionArgs={calcName};
+        //cursor=db.query(table_Name,columns,column1+" LIKE ?",selectionArgs,null,null,null);
         cursor=db.rawQuery("select * from "+table_Name+" where "+column1+" = ?",selectionArgs);
         if(cursor.moveToFirst())
         {
