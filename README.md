@@ -41,3 +41,5 @@ Miten voisi jatkaa?
 * Lisätä mahdollisuus vaihtaa sovelluksen kieltä ja teemaa.
 
 # APK
+
+[Laskin](https://kahvitauko.eu/dl/laskin.apk)
