@@ -30,8 +30,8 @@ Päiväkirja:
 * Korjasin ongelmia sivujen lataamisessa ja sovelluksen kaatumisessa.
 * Korjasin ongelman missä sovellus käytti vanhaa navigointi tapaa.
 
-27/05/2019 (5h)
-* Korjasin ongelman missä sovellus kaatui painaessa näppäintä.
+27/05/2019 (6h)
+* Yritin korjata ongelman missä sovellus kaatui painaessa näppäintä.
 
 Ongelmia:
 * Asetukset sivua ei ole olemassa koska sillä ei ole ATM tarvetta.
